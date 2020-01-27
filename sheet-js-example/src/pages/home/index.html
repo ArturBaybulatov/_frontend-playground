@@ -1,0 +1,25 @@
+﻿{% extends "partials/_layout.html" %}
+
+{% block title %}Hello{% endblock %}
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="pad">
+        <label class="b nowrap flex f-middle bgap">
+            <span class="button rgap-s!" js-excel-file-upload-btn>Загрузить…</span>
+            <span class="a small" style="width: 400px; overflow: hidden; text-overflow: ellipsis" js-excel-file-name></span>
+            <input style="display: none" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" js-excel-file-input>
+        </label>
+
+        <div>
+            <button class="button" type="button" js-parse-excel-btn>Распарсить</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

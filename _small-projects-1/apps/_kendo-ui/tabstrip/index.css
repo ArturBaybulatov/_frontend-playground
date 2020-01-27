@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.u-highlighted { box-shadow: inset 0 0 20px 20px #ccc5 }
+
+.u-pre { white-space: pre }
+
+
+.ui-dialog {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.ui-dialog .ui-dialog-content { overflow: visible !important }
+
+
+.spacer {
+    display: inline-block;
+    width: 30px;
+}
+
+.spacer--small { width: 10px }
+
+
+.input {
+    display: inline-block;
+    padding: 0.34em;
+}
+
+
+.main {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.k-tabstrip-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-strip {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-strip .k-tabstrip-items { flex-shrink: 0 }
+
+.tab-strip .k-content { flex-grow: 1 }
+
+.k-tabstrip-top.tab-strip > .k-tabstrip-items .k-state-active {
+    border-bottom-width: 4px !important;
+    margin-bottom: 0 !important;
+}
+
+.k-widget.tab-strip { line-height: 1.6em !important }

@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="../../lib-local/baybulatov-util-css-0.1.0-beta/baybulatov-util.css" rel="stylesheet">
+    <link href="../../lib/toastr-2.1.4/toastr.min.css" rel="stylesheet">
+    <link href="../../lib-local/baybulatov-util-js-0.6.0-beta/baybulatov-util.css" rel="stylesheet">
+    <link href="../../lib/dev-colors.css" rel="stylesheet">
+
+    <link href="../../lib/kendo-ui-core-2018.2.328/styles/kendo.common.core.min.css" rel="stylesheet">
+    <link href="../../lib/kendo-ui-core-2018.2.328/styles/kendo.material.min.css" rel="stylesheet">
+    <link href="../../lib-local/baybulatov-kendo-util-0.3.0-beta/baybulatov-kendo-util.css" rel="stylesheet">
+
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bgap"><input type="number" class="k-textbox" js-number-input></div>
+    <div class="bgap"><input data-role="numerictextbox" data-format="n0" data-decimals="0" data-restrict-decimals="true" js-number-input></div>
+
+    <script src="../../lib/core-js-2.5.1/shim.min.js"></script>
+    <script src="../../lib/lodash-4.17.5/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../../lib/toastr-2.1.4/toastr.min.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown' }</script>
+    <script src="../../lib-local/baybulatov-util-js-0.6.0-beta/baybulatov-util.js"></script>
+    <script src="../../lib/kendo-ui-core-2018.2.328/js/kendo.ui.core.min.js"></script> <!-- Everything -->
+    <script src="../../lib-local/baybulatov-kendo-util-0.3.0-beta/baybulatov-kendo-util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

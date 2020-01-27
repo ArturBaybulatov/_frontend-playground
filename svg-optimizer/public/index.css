@@ -1,0 +1,48 @@
+.pad { padding: 15px !important }
+.bgap { margin-bottom: 15px !important }
+.rgap { margin-right: 15px !important }
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    background-color: #ddd;
+}
+
+
+.breadcrumb { font-size: 120% }
+
+.breadcrumb__home {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: 6px 10px;
+}
+
+.breadcrumb__home:hover { background-color: rgba(255, 255, 0, 0.3) }
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.gallery__item--directory {
+    background-color: #ee6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

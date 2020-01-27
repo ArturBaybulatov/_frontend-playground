@@ -1,0 +1,27 @@
+﻿@import (reference) "../../variables.less";
+@import (less, reference) "../../../../lib/dev-colors.css"; // Debug
+
+
+.note {
+    padding: @gap-s;
+    border: 1px solid #ccc;
+
+    &__name {
+        font-weight: bold;
+        margin-bottom: @gap-s;
+    }
+}
+
+
+.tags-wrap { line-height: 2.8em }
+
+.tag {
+    display: inline-block;
+    line-height: 1.6em;
+    padding: 4px 8px;
+    background-color: #eee;
+    text-shadow: 0 0 6px white, 0 0 6px white;
+
+    &--highlighted { background-color: #fff2b2 }
+    &--highlighted-heavy { background-color: #ffde3d }
+}

@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Hello</title>
+    <link rel='stylesheet' href='/lib/dev-colors.css'>
+</head>
+
+<body>
+    <div class='js-news-container'>
+        <button type='button' class='js-prev-news'>< Prev</button>
+        <span class='js-news'></span>
+        <button type='button' class='js-next-news'>Next ></button>
+    </div>
+
+    <script src='/lib/lodash-4.16.4/lodash.js'></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src='/lib/jquery-3.1.1/jquery.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>

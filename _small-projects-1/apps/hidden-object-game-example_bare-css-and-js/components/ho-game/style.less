@@ -1,0 +1,203 @@
+@import "../../variables.less";
+
+
+.ho-game__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ho-game__level {}
+
+.ho-game__progress {
+    display: flex;
+}
+
+.ho-game__badge {
+    width: 22px;
+    height: 26px;
+    background-image: url("../../images/icons/badge-gray.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--completed {
+        background-image: url("../../images/icons/badge.png");
+    }
+}
+
+
+.ho-game__body {
+    position: relative;
+    width: 100%;
+    padding-bottom : 56%;
+}
+
+.ho-game__body-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+}
+
+.ho-game__area {
+    position: relative;
+    height: 80.5%;
+    user-select: none;
+    background-image: url("../../images/level-1/bg.svg"); // Debug
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.ho-game__object {
+    position: absolute;
+    width: 8%;
+    height: 16%;
+    //background-color: #f00; // Debug
+}
+
+
+.ho-game__toolbar {
+    height: 19.5%;
+    display: flex;
+    user-select: none;
+    background-color: #fff;
+}
+
+
+.ho-game__legend {
+    padding: 0 3%;
+    width: 66%;
+}
+
+.ho-game__legend-inner {
+    position: relative;
+    height: 100%;
+}
+
+.ho-game__legend-slider-nav-position {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ho-game__legend-slider-container {
+    height: 100%;
+}
+
+.ho-game__legend-objects {
+    height: 100%;
+    //background-color: #669; // Debug
+}
+
+.ho-game__legend-object {
+    padding: 0.8%;
+    width: 18%;
+    height: 100%;
+    //background-image: url("../../images/icons/fullscreen.svg"); // Debug
+    //background-position: center center; // Debug
+    //background-size: contain; // Debug
+    //background-repeat: no-repeat; // Debug
+}
+
+.ho-game__legend-object-inner {
+    width: 100%;
+    height: 100%;
+    //background-image: url("../../images/icons/fullscreen.svg"); // Debug
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ho-game__legend-slider-nav {
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+    background-image: url("../../images/icons/arrow-red-right.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--prev {
+        left: -5%;
+        transform: rotate(180deg)
+    }
+
+    &--next {
+        right: -5%;
+    }
+}
+
+
+.ho-game__controls {
+    width: 34%;
+    display: flex;
+    justify-content: center;
+}
+
+.ho-game__control-wrap {
+    width: 33.3333%;
+    padding: 2%;
+    //background-image: url("../../images/icons/fullscreen.svg"); // Debug
+    //background-position: center center; // Debug
+    //background-size: contain; // Debug
+    //background-repeat: no-repeat; // Debug
+}
+
+.ho-game__control {
+    box-sizing: border-box;
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid @color-coral;
+    border-radius: 8px;
+
+    &--fullscreen {
+        background-color: @color-coral;
+    }
+}
+
+.ho-game__control-inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--zoom {
+        background-image: url("../../images/icons/zoom-in.svg");
+    }
+
+    &--help {
+        background-image: url("../../images/icons/question.svg");
+    }
+
+    &--fullscreen {
+        background-image: url("../../images/icons/fullscreen.svg");
+    }
+}
+
+
+.ho-game__message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2.3em;
+    line-height: 1em;
+    color: white;
+}
+
+.ho-game__buttons {
+    display: flex;
+    justify-content: space-between;
+}

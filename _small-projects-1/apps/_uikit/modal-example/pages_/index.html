@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="/lib/uikit-2.27.2/css/uikit.css">
+    <link rel="stylesheet" href="../.build/pages/index.css">
+</head>
+
+<body>
+    <!--<div>
+        <input type="text" data-bind="value: inputText1">
+        <a href="#" data-bind="click: function() {openModal(inputText1())}">Open modal</a>
+    </div>-->
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/knockout-js-3.4.2/knockout.js"></script>
+    <script src="/lib/uikit-2.27.2/js/uikit.js"></script>
+
+    <script src="components.js"></script>
+    <script src="../.build/pages/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input,
+textarea,
+button { padding: 6px }
+
+button { min-width: 80px }
+
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.popup {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    width: auto;
+    max-width: 800px;
+    background-color: #fff;
+}
+
+
+.sheet { background-color: #ccc }
+
+
+.ht_master__cell { }
+
+.ht_master__cell--pre { white-space: pre !important }

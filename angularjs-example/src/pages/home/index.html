@@ -1,0 +1,23 @@
+﻿{% extends "partials/_layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div ng-controller="MainCtrl as vm" class="main">
+        <c-menu pages="vm.pages"></c-menu>
+
+        <div class="content">
+            <c-example text="All your base are belong to us"></c-example>
+            <h2>{{ vm.paginationPage }}</h2>
+            <button type="button" class="ui-button" ng-click="vm.openPopup()">Open popup</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

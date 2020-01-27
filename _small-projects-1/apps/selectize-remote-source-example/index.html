@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="/lib/selectize-js-0.12.4/css/selectize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <select style="width: 300px" js-select></select>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/selectize-js-0.12.4/js/selectize.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

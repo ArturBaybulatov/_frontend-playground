@@ -1,0 +1,4 @@
+string
+number
+boolean
+enum

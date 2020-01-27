@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="../../lib-local/baybulatov-util-css-0.1.0-beta/baybulatov-util.css" rel="stylesheet">
+    <link href="../../lib-local/baybulatov-util-js-0.6.0-beta/baybulatov-util.css" rel="stylesheet">
+    <link href="../../lib/dev-colors.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div class="bgap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros turpis, condimentum eget tincidunt quis, tempor vel erat. Mauris velit diam, vulputate ut commodo eget, rutrum ac lorem. Fusce fermentum porta enim id rhoncus. Morbi vel posuere est. Donec ante ante, vulputate sit amet quam et, ultricies viverra nibh. Suspendisse tristique orci ut dictum rutrum. Vestibulum tincidunt ante et enim consectetur, quis commodo quam efficitur. Vestibulum iaculis eros felis, eget porttitor massa egestas vitae. Aliquam auctor congue sagittis.</div>
+
+        <div class="bgap">Integer ornare orci aliquet placerat finibus. Praesent purus urna, placerat eu auctor non, scelerisque in elit. Morbi quis sem ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris in blandit mauris, auctor molestie ex. Morbi fermentum, tortor et sollicitudin feugiat, ipsum mauris vestibulum diam, a sodales erat erat a massa. Etiam rutrum augue erat, vitae ultricies ipsum fringilla ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam vitae felis viverra tristique. Nullam pharetra blandit velit, at suscipit risus facilisis eu. Proin quis risus odio. Mauris ut mi sed diam vestibulum porttitor. Sed tristique metus eu consectetur rutrum. Etiam vestibulum leo at blandit congue. Cras eu odio pharetra, feugiat quam quis, egestas urna. Phasellus suscipit, arcu mollis tempus auctor, nulla dui consequat lacus, sit amet pulvinar nisi est nec ante.</div>
+
+        <div a js-print-content>
+            <div c class="bgap">Nulla orci sapien, volutpat a semper et, convallis vitae metus. Duis egestas mattis tortor ut volutpat. Ut sagittis arcu ac pharetra laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla eget arcu et urna vestibulum molestie vitae ut nisi. Cras placerat, diam id feugiat vestibulum, lectus dolor volutpat nibh, a ornare velit purus in purus. In arcu libero, dapibus in odio a, rhoncus scelerisque dui. Quisque ultricies vitae dolor at eleifend. Aliquam vel dapibus odio. In condimentum pharetra risus, quis fermentum magna eleifend efficitur. Maecenas a urna vitae leo feugiat tempus.</div>
+            <div class="bgap">Maecenas massa dolor, ultrices eu sem id, sagittis auctor felis. Nullam et ligula tincidunt leo efficitur rhoncus. Donec feugiat scelerisque fringilla. Aliquam erat volutpat. Fusce a lacus metus. Cras et massa quis tellus pellentesque dapibus eu sed arcu. Suspendisse massa ipsum, ornare vitae sapien at, fermentum pretium tellus. Quisque lacinia ante eu est condimentum, non ullamcorper nunc maximus. Pellentesque elit mauris, fermentum eu lectus eu, vestibulum hendrerit felis. Aliquam erat felis, aliquet ac euismod vitae, interdum non odio. Aenean placerat mi fermentum, fringilla ante nec, hendrerit magna. Nunc maximus nibh eget ligula dictum cursus.</div>
+        </div>
+
+        <div class="bgap">Nulla et tempus velit. Integer nec purus erat. Pellentesque id turpis in leo pretium pellentesque. Donec elementum magna augue, vitae suscipit diam congue porttitor. Nunc lacus libero, sollicitudin id fermentum eu, feugiat et quam. Morbi aliquet ligula at dui faucibus, non dapibus erat varius. Vestibulum sed eleifend mi. Maecenas eget felis vel nibh imperdiet fermentum. Phasellus tincidunt a libero at commodo. Vivamus turpis sapien, porta id molestie sit amet, semper sed nisl. Nullam cursus cursus nisl, vitae ornare odio eleifend nec. Duis augue sapien, porta vel tellus et, lobortis consequat mi. Nam at pellentesque massa. Donec sit amet maximus arcu, sit amet egestas lectus.</div>
+
+        <div>
+            <button type="button" js-print-btn>Print</button>
+        </div>
+    </div>
+
+
+    <script src="../../lib/core-js-2.5.1/shim.min.js"></script>
+    <script src="../../lib/lodash-4.17.5/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../../lib-local/baybulatov-util-js-0.6.0-beta/baybulatov-util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

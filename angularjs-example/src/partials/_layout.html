@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="../../lib/toastr-2.1.4/toastr.min.css" rel="stylesheet">
+    <link href="../../lib/baybulatov-util-js-0.5.0+/baybulatov-util.css" rel="stylesheet">
+    <link href="../../lib/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link href="../../lib/dev-colors.css" rel="stylesheet"> <!-- Debug -->
+
+    {% block styles %}{% endblock %}
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+
+    <script src="../../lib/core-js-2.5.1/shim.min.js"></script>
+    <script src="../../lib/lodash-4.17.5/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../../lib/angular-1.6.9/angular.min.js"></script>
+    <script>angular.module('app', [])</script>
+    <script src="../../lib/toastr-2.1.4/toastr.min.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown' }</script>
+    <script src="../../lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../../lib/baybulatov-util-js-0.5.0+/baybulatov-util.js"></script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

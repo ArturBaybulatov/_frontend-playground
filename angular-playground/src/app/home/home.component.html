@@ -1,0 +1,39 @@
+<c-nav></c-nav>
+
+<div class="pad">
+    <div class="bgap">This is lazy-loaded "home" page with nested routing</div>
+
+    <!--<div class="bgap">-->
+        <!--<c-user-card [user]="currentUser"></c-user-card>-->
+    <!--</div>-->
+
+    <div class="bgap">
+        <button class="rgap-s" nz-button (click)="generateUser()">Generate user</button>
+        <button nz-button (click)="generateUsers()">Generate users</button>
+    </div>
+
+    <nz-table #usersTable [nzData]="users$ | async">
+        <thead>
+            <tr>
+                <th nzAlign="right" nzWidth="200px">ID</th>
+                <th>Name</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="clickable" *ngFor="let user of usersTable.data" (click)="showUser(user.id)">
+                <td nzAlign="right">{{ user.id }}</td>
+
+                <td>
+                    <i *ngIf="user.gender === Genders.Male" class="rgap-s" nz-icon type="star" theme="twotone" nzTwotoneColor="#668eff" style="font-size: 150%"></i>
+                    <i *ngIf="user.gender === Genders.Female" class="rgap-s" nz-icon type="heart" theme="twotone" nzTwotoneColor="#ff68d6" style="font-size: 150%"></i>
+
+                    {{ user.firstName }} {{ user.lastName }}
+                </td>
+
+                <td><span class="soft-link" style="color: red" (click)="deleteUser(user.id, $event)">Delete</span></td>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>

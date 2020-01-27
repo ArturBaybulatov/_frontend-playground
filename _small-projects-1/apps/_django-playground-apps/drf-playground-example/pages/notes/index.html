@@ -1,0 +1,30 @@
+﻿{% extends "_django-playground-apps/drf-playground-example/partials/_layout.html" %}
+
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="menu bgap-l" js-menu></div>
+
+        <div class="bgap-l">
+            <button class="k-button rgap-s" type="button" js-prev-btn>&lt; Prev</button>
+            <button class="k-button" type="button" js-next-btn>Next &gt;</button>
+        </div>
+
+        <table class="table bgap-l" js-table></table>
+
+        <form novalidate js-note-creation-form>
+            <div class="bgap-s"><input class="k-textbox" placeholder="Name" js-name-field></div>
+            <div class="bgap-s"><input class="k-textbox" type="number" placeholder="Share count" js-share-count-field></div>
+            <div class="bgap-s"><select class="k-textbox" js-category-select></select></div>
+            <div><button class="k-button k-primary" type="submit">Create</button></div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

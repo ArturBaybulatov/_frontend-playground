@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello</title>
+
+    <link rel="stylesheet" href="/lib/chosen-1.6.2/chosen.css">
+</head>
+
+<body>
+    <form action="http://localhost:8000/test/" method="POST" novalidate>
+        <div>
+            <label>a:</label>
+            <select name="a" multiple class="js-select" style="width: 400px"></select>
+        </div>
+
+        <div><button type="submit">Submit</button></div>
+    </form>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/chosen-1.6.2/chosen.jquery.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

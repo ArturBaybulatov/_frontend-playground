@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="http://192.168.0.67:9000/dev-colors.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="http://192.168.0.67:9000/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="http://192.168.0.67:9000/jquery-3.1.1/jquery.js"></script>
+    <script src="http://192.168.0.67:9000/phaser-js-ce-2.7.8/phaser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

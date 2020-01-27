@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="/lib/normalize-css-7.0.0/normalize.css">
+    <link rel="stylesheet" href="/lib/datatables-1.10.12/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="/lib/_datatables-extensions/scroller-1.4.2/css/scroller.dataTables.css">
+    <link rel="stylesheet" href="/lib/dev-colors.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="d">
+        <table class="display cell-border n___owrap" style="width: 100%" js-table></table>
+    </div>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/moment-js-2.15.1/moment.js"></script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/datatables-1.10.12/js/jquery.dataTables.js"></script>
+    <script src="/lib/datatables-1.10.12/js/i18n/russian.js"></script>
+    <script src="/lib/_datatables-extensions/scroller-1.4.2/js/dataTables.scroller.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import (less, reference) "../public/dev-colors.css"; // Debug
+
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.msg {
+  @max-width: 600px;
+
+  &__title {
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-bottom: 6px;
+    max-width: @max-width;
+  }
+
+  &__body {
+    line-height: 1.6em;
+    max-width: @max-width;
+  }
+}
+
+.el-notification__content {
+  text-align: left !important;
+}
+
+
+.multiselect.colors {
+  line-height: normal;
+  min-height: 30px !important; // Default: 40px
+}
+
+.colors .multiselect__single {
+  padding-left: 0 !important; // Default: 5px
+  margin-bottom: 0 !important; // Default: 8px
+}
+
+.colors .multiselect__tags {
+  min-height: 30px !important; // Default: 40px
+  padding-left: 4px !important; // Default: 8px
+  padding-top: 4px !important; // Default: 8px
+}
+
+.colors .multiselect__tag {
+  margin-bottom: 0 !important; // Default: 5px
+}
+
+.colors .multiselect__select { // Options dropdown expand arrow
+  height: 30px !important; // Default: 38px
+}
+
+.colors__selected-option-wrap {
+  border-radius: 2px;
+  box-shadow: 0 0 4px #ccc;
+  height: 20px;
+  line-height: 1em;
+  position: relative;
+}
+
+.colors__selected-option-wrap--colorset {
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.colors__selected-option-wrap--colorset-no-colors {
+  box-shadow: none !important;
+  color: black !important;
+  text-shadow: none !important;
+}
+
+.colors__selected-option {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.colors__selected-option-remove-btn {
+  font-size: 20px; // Set the same as option height
+  line-height: 1em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.colors__selected-option-overlay-icon {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+
+.colors .multiselect__option {
+  line-height: 30px !important; // Default: 16px
+  min-height: 0 !important; // Default: 40px
+  padding: 0 !important; // Default: 12px
+}
+
+.colors .multiselect__option--highlight {
+  background-color: #ddd !important; // Default: rgb(65, 184, 131)
+  color: black !important; // Default: #fff
+}
+
+.colors__option-color-preview {
+  border-radius: 2px;
+  box-shadow: 0 0 4px #ccc;
+  height: 20px;
+  width: 20px;
+}
+
+.colors__option-color-preview--colorset {
+  width: 80px;
+}
+
+.colors__option-text {
+  min-width: 180px;
+}
+
+.colors__option-link {
+  color: #409eff;
+  display: none;
+}
+
+.multiselect__element:hover .colors__option-link {
+  display: inline;
+}

@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="../../lib-local/baybulatov-util-css-0.1.0-beta/baybulatov-util.css" rel="stylesheet">
+    <link href="../../../../lib/dev-colors.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body style="fill: blue">
+    <!-- https://codepen.io/chriscoyier/pen/Hwcxp -->
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; visibility: hidden; z-index: -1">
+        <linearGradient id="coin" x2="50%" y2="40%" spreadMethod="reflect">
+            <stop stop-color="gold" offset="30%" />
+            <stop stop-color="goldenrod" offset="70%" />
+            <stop stop-color="white" offset="82%" />
+            <stop stop-color="gold" offset="92%" />
+            <stop stop-color="darkgoldenrod" offset="100%" />
+        </linearGradient>
+
+        <radialGradient id="pot" fx="30%" fy="35%">
+            <stop stop-color="white" offset="0%" />
+            <stop stop-color="gold" offset="15%" />
+            <stop stop-color="goldenrod" offset="80%" />
+            <stop stop-color="darkgoldenrod" offset="100%" />
+        </radialGradient>
+
+        <symbol id="pot-of-gold" viewBox="0 0 60 55">
+            <g fill="url(#coin)" stroke="darkgoldenrod" stroke-width="0.5">
+                <circle r="5" transform="translate(30,7)" />
+                <circle r="5" transform="translate(35,13)" />
+                <circle r="5" transform="translate(22,10)" />
+                <circle r="5" transform="translate(27,9)" />
+                <circle r="5" transform="translate(18,17)" />
+                <circle r="5" transform="translate(42,18)" />
+                <circle r="5" transform="translate(32,19)" />
+                <circle r="5" transform="translate(30,14)" />
+                <circle r="5" transform="translate(25,15)" />
+                <circle r="5" transform="translate(37,19)" />
+                <circle r="5" transform="translate(31,16)" />
+                <circle r="5" transform="translate(20,18)" />
+                <circle r="5" transform="translate(26,21)" />
+            </g>
+
+            <path fill="url(#pot)" stroke="#751" stroke-width="0.5" d="M30,50 C45,50 55,45 55,35 Q 55,27 50,25 C55,22 53,15 45,20 S 23,25 15,20 S5,22 10,25 Q 5,27 5,35 C5,45 15,50 30,50Z" />
+        </symbol>
+
+
+        <symbol id="beaker" viewBox="214.7 0 182.6 792">
+            <circle cx="344.8" cy="20.2" r="20.2"/>
+            <circle cx="344.8" cy="92.9" r="20.2"/>
+            <circle cx="320.5" cy="169.7" r="24.2"/>
+            <circle cx="243" cy="141.4" r="24.2"/>
+            <circle cx="284.2" cy="56.6" r="36.4"/>
+
+            <path d="M397.3 768.5l-11.3-343.5v-178.5l9.7-20.2h-29.9l-4 13.7 2.4 189.9 9.7 316.8c1.6 14.5-19.4 12.9-34.8 12.9h-33.9s-38.8.8-46.1 0c-14.5-.8-18.6 1.6-17-29.1 1.6-25.2.8-95.5 5.7-301.5l-2.4-189.9-3.2-12.9h-27.5l9.7 20.2v178.6s-3.2 323.3-3.2 343.5c0 26.7 22.6 23.4 22.6 23.4h128.5c7.2 0 25 0 25-23.4zM259.9 473.5h93.8l-1.6-79.9h-92.2zM356.1 611.7l-2.4-132.6v5.7h-93.8l-.8 126.9zM352.1 382.3l-1.7-99.4h-89.7l-.8 99.4zM259.1 623l-.8 123.6h101l-2.4-123.6z"/>
+        </symbol>
+
+
+        <symbol id="fish" viewBox="0 26 100 48">
+            <path d="M98.5,47.5C96.5,45.5,81,35,62,35c-2.1,0-4.2,0.1-6.2,0.3L39,26c0,4.5,1.3,9,2.4,12.1C31.7,40.7,23.3,44,16,44L0,34 c0,8,4,16,4,16s-4,8-4,16l16-10c7.3,0,15.7,3.3,25.4,5.9C40.3,65,39,69.5,39,74l16.8-9.3c2,0.2,4.1,0.3,6.2,0.3 c19,0,34.5-10.5,36.5-12.5S100.5,49.5,98.5,47.5z M85.5,50c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5 C88,48.9,86.9,50,85.5,50z"/>
+        </symbol>
+
+
+        <symbol id="ggg" viewBox="0 0 48 45">
+            <path d="M24.563.006a1.005 1.005 0 1 0 .218 2c4.352 0 6.29 1.265 7.25 2.406.903 1.07.965 1.98.969 2.094V11.912a1.025 1.025 0 0 0 0 .594v19.531a1.018 1.018 0 0 0 0 .406v5.47s.031.995-.906 2.124c-.938 1.129-2.875 2.406-7.313 2.406a1.006 1.006 0 0 0-.879.497 1.01 1.01 0 0 0 0 1.007c.184.313.52.5.88.496 4.835 0 7.484-1.484 8.843-3.125.145-.175.258-.355.375-.53.117.175.23.355.375.53 1.36 1.641 4.008 3.125 8.844 3.125.36.004.695-.183.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.312-.52-.5-.88-.496-4.437 0-6.374-1.277-7.312-2.406-.937-1.129-.906-2.125-.906-2.125v-4.687h13v-22H35v-4.72c.004-.112.066-1.023.969-2.093.96-1.14 2.898-2.406 7.25-2.406.36.004.695-.184.879-.496a1.01 1.01 0 0 0 0-1.008c-.184-.313-.52-.5-.88-.496-4.757 0-7.406 1.496-8.78 3.125a6.4 6.4 0 0 0-.438.594 6.4 6.4 0 0 0-.438-.594C32.188 1.502 29.54.006 24.782.006a1.023 1.023 0 0 0-.22 0zM0 11.225v22h30v-2H2v-18h28v-2H0zm35 2h11v18H35v-18z"/>
+        </symbol>
+    </svg>
+
+
+    <div a class="flex bgap item">
+        <svg class="flex f-no-shink icon item__icon"><use xlink:href="#beaker"/></svg>
+        <span class="flex f-grow f-middle pad item__text">Lorem ipsum dolor</span>
+    </div>
+
+    <div b class="flex bgap item">
+        <svg class="flex f-no-shrink icon item__icon"><use xlink:href="#fish"/></svg>
+        <span class="flex f-grow f-middle pad item__text">Sit amet consectetur</span>
+    </div>
+
+    <div c class="flex bgap item">
+        <svg class="flex f-no-shrink icon item__icon"><use xlink:href="#pot-of-gold"/></svg>
+        <span class="flex f-grow f-middle pad item__text">Adipiscing elit</span>
+    </div>
+
+    <div d class="flex bgap item">
+        <svg class="flex f-no-shrink icon item__icon"><use xlink:href="#ggg"/></svg>
+        <span class="flex f-grow f-middle pad item__text">Lorem ipsum dolor</span>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

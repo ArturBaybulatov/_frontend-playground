@@ -1,0 +1,21 @@
+<ul nz-menu nzMode="horizontal" class="flex">
+    <li nz-menu-item routerLinkActive="ant-menu-item-selected">
+        <a routerLink="/home">Home</a>
+    </li>
+
+    <li nz-menu-item routerLinkActive="ant-menu-item-selected">
+        <a routerLink="/profile">Profile</a>
+    </li>
+
+    <li nz-menu-item routerLinkActive="ant-menu-item-selected">
+        <a routerLink="/about">About</a>
+    </li>
+
+    <li class="f-grow"></li>
+
+    <li class="rgap" *ngIf="foo">[CommonModule directive example]</li>
+
+    <li>User count: {{ (users$ | async).length }}</li>
+
+    <li nz-menu-item><i nz-icon type="user"></i></li>
+</ul>

@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="/lib/jquery-html5-crossword-2.1/main.css">
+    <link rel="stylesheet" href="../.build/pages/index.css">
+</head>
+
+<body>
+    <div><button type="button" js-crossword-check-btn>Check</button></div>
+    <div js-crossword></div>
+    <div id="definitions" js-questions></div>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/knockout-js-3.4.2/knockout.js"></script>
+    <script src="/lib/jquery-html5-crossword-2.1/crossword.MODIFIED.js"></script>
+    <script src="../.build/pages/index.js"></script>
+</body>
+</html>

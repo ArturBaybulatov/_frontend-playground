@@ -1,0 +1,34 @@
+<div style="width: 600px">
+    <form (ngSubmit)="addTodo(newTodoInput.value); newTodoInput.value = ''">
+        <div class="flex hpad tpad">
+            <span class="f-grow rgap-s">
+                <mat-form-field class="full-width">
+                    <input matInput #newTodoInput>
+                </mat-form-field>
+            </span>
+
+            <span>
+                <button mat-raised-button color="primary" type="submit">Add</button>
+            </span>
+        </div>
+    </form>
+
+    <div class="pad flex">
+        <span class="f-grow"></span>
+        <button class="rgap-s!" mat-raised-button (click)="markAllTodosDone()">Mark all done</button>
+        <button mat-raised-button (click)="clearDoneTodos()">Clear done</button>
+    </div>
+
+    <mat-list class="pad-xs">
+        <mat-list-item *ngFor="let todo of todos" title="{{ todo.id }}">
+            <div class="flex full-width">
+                <span class="flex f-middle rgap-s" style="margin-top: -4px">
+                    <mat-checkbox [checked]="todo.done" #todoDoneChk (change)="toggleTodo(todo, todoDoneChk.checked)"></mat-checkbox>
+                </span>
+
+                <span class="flex f-middle full-width rgap-s" [class.done]="todo.done">{{ todo.name }}</span>
+                <span><button mat-icon-button (click)="removeTodo(todo.id)" style="font-size: 30px">&times;</button></span>
+            </div>
+        </mat-list-item>
+    </mat-list>
+</div>

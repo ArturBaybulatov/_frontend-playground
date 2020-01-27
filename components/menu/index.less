@@ -1,0 +1,28 @@
+﻿@import (reference) "../variables.less";
+@import (less, reference) "../dev-colors.css"; // Debug
+
+
+.menu {
+    flex-shrink: 0;
+    background-color: @nav-bg-color;
+
+    &__inner {
+        max-width: @max-width;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &__item {
+        padding: 1em;
+        cursor: pointer;
+
+        &:hover { background-color: @nav-item-hover-bg-color }
+
+        a& { text-decoration: none }
+        a&:hover { text-decoration: underline }
+
+        &--active { background-color: @nav-item-active-bg-color }
+    }
+
+    &__gap { flex-grow: 1 }
+}

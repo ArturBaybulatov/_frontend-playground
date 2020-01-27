@@ -1,0 +1,27 @@
+@import (less, reference) "../../lib/dev-colors.css"; // Debug
+
+
+@gap-s: 10px;
+@gap: 20px;
+@gap-l: 40px;
+
+@max-width: 1400px;
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    background-color: #eee;
+}
+
+
+.content {
+    box-sizing: border-box;
+    max-width: @max-width;
+    margin: 0 auto;
+    padding: @gap;
+    height: 100vh;
+    background-color: white;
+}

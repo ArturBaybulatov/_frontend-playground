@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="../../lib-local/baybulatov-util-css-0.1.0/baybulatov-util.css" rel="stylesheet">
+    <link href="../../lib-local/baybulatov-util-js-0.6.0/baybulatov-util.css" rel="stylesheet">
+    <link href="../../lib/dev-colors.css" rel="stylesheet"> <!-- Debug -->
+
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <svg a width='500' height='500' js-svg></svg>
+
+    <script src="../../lib/core-js-2.5.1/shim.min.js"></script>
+    <script src="../../lib/lodash-4.17.11/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../lib/date-fns-1.29.0/date_fns.min.js"></script>
+    <script src="../../lib/date-fns-1.29.0/locale-ru.js"></script>
+    <script src="../../lib/d3-5.9.1/d3.js"></script> <!-- Unminified version for development -->
+    <script src="../../lib-local/baybulatov-util-js-0.6.0/baybulatov-util.js"></script>
+    <script src="../../lib/regenerator-runtime-0.12.1/runtime.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>

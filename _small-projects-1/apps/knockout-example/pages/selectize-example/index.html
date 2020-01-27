@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selectize example</title>
+
+    <link rel="stylesheet" href="/lib/uikit-2.27.2/css/uikit.css">
+    <link rel="stylesheet" href="/lib/selectize-js-0.12.4/css/selectize.css">
+
+    <link rel="stylesheet" href="../../.build/pages/selectize-example/index.css">
+</head>
+
+<body>
+    <div class="select select--yellow" style="width: 300px">
+        <select js-select>
+            <option value="">------</option>
+            <option value="1">Foo</option>
+            <option value="2">Bar</option>
+            <option value="3" selected>&lt;span class="tag"&gt;Some tag&lt;/span&gt;Baz</option>
+            <option value="4">Qux</option>
+            <option value="5">&lt;span class="tag"&gt;Another tag&lt;/span&gt;Quux</option>
+            <option value="6">Corge</option>
+            <option value="7">Grault</option>
+            <option value="8">Garply</option>
+        </select>
+    </div>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/knockout-js-3.4.2/knockout.js"></script>
+    <script src="/lib/uikit-2.27.2/js/uikit.js"></script>
+    <script src="/lib/selectize-js-0.12.4/js/selectize.js"></script>
+
+    <script src="../../.build/pages/selectize-example/index.js"></script>
+</body>
+</html>

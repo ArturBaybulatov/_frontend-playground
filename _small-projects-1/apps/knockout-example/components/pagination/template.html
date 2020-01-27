@@ -1,0 +1,9 @@
+﻿<div class="pagination">
+    <!-- ko foreach: {data: pages, as: 'page'} -->
+        <button type="button" data-bind="
+            text: page,
+            css: {'pagination__page--active': page === $parent.params.currentPage()},
+            click: function() {$parent.params.currentPage(page)},
+        "></button>
+    <!-- /ko -->
+</div>

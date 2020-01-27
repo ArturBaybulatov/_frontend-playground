@@ -1,0 +1,72 @@
+﻿@import "../../variables.less";
+
+
+.button {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 27px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 100px;
+    border: none;
+    border-radius: 19px;
+    outline: none;
+    color: #333;
+    background-color: #eee;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+        color: #333;
+        text-decoration: none;
+    }
+
+    &[disabled] {
+        cursor: not-allowed !important;
+        color: white !important;
+        background-color: #c6c6c6 !important;
+        border: none !important;
+    }
+
+    &[disabled]:hover {
+        background-color: lighten(#c6c6c6, 2%) !important;
+        box-shadow: 0px 2px 30px -13px black !important;
+    }
+
+    &--yellow {
+        color: black;
+        background-color: @color-yellow;
+
+        &:hover {
+            color: black;
+            box-shadow: 0px 2px 30px -10px black;
+        }
+    }
+
+    &--red {
+        color: #fefefe;
+        background-color: @color-red;
+
+        &:hover {
+            color: #fefefe;
+            background-color: lighten(@color-red, 10%);
+            box-shadow: 0px 2px 30px -10px black;
+        }
+    }
+}
+
+
+@media @tablet {
+    .button {
+        padding: 0 53px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+        border-radius: 25px;
+    }
+}

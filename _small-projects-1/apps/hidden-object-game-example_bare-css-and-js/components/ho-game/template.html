@@ -1,0 +1,72 @@
+﻿<div class="ho-game">
+    <div class="ho-game__header">
+        <div class="ho-game__level">
+            <span data-bind="text: currentLevelNum() + 1"></span> уровень из <span data-bind="text: maxLevelNum + 1"></span>
+        </div>
+
+        <div class="ho-game__progress">
+            <!-- ko foreach: {data: levels, as: 'level'} -->
+                <div class="ho-game__badge" data-bind="css: {'ho-game__badge--completed': level.completed()}"></div>
+            <!-- /ko -->
+        </div>
+    </div>
+
+    <div class="ho-game__body" js-game-body>
+        <div class="ho-game__body-inner">
+            <div class="ho-game__area" js-game-area>
+                <!--<object class="ho-game__object" js-object type="image/svg+xml" data="../images/level-1/01.svg"></object>-->
+            </div>
+
+            <div class="ho-game__toolbar">
+                <div class="ho-game__legend">
+                    <div class="ho-game__legend-inner">
+                        <div class="ho-game__legend-slider-nav-position uk-slidenav-position" data-uk-slider="{infinite: false}">
+                            <div class="ho-game__legend-slider-container uk-slider-container">
+                                <ul class="ho-game__legend-objects uk-slider uk-grid-width-medium-1-4" js-legend-objects>
+                                    <!--<li class="ho-game__legend-object"><div class="ho-game__legend-object-inner"></div></li>-->
+                                </ul>
+                            </div>
+
+                            <div class="ho-game__legend-slider-nav ho-game__legend-slider-nav--prev" data-uk-slider-item="previous"></div>
+                            <div class="ho-game__legend-slider-nav ho-game__legend-slider-nav--next" data-uk-slider-item="next"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ho-game__controls">
+                    <div class="ho-game__control-wrap">
+                        <div class="ho-game__control">
+                            <div class="ho-game__control-inner ho-game__control-inner--zoom" js-zoom data-zoom-direction="in"></div>
+                        </div>
+                    </div>
+
+                    <div class="ho-game__control-wrap">
+                        <div class="ho-game__control">
+                            <div class="ho-game__control-inner ho-game__control-inner--help" js-help></div>
+                        </div>
+                    </div>
+
+                    <div class="ho-game__control-wrap">
+                        <div class="ho-game__control ho-game__control--fullscreen">
+                            <div class="ho-game__control-inner ho-game__control-inner--fullscreen" js-fullscreen></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ho-game__buttons">
+        <button
+            type="button"
+            class="ho-game__button-prev"
+            data-bind="disable: currentLevelNum() === 0"
+            js-level-prev>Previous</button>
+
+        <button
+            type="button"
+            class="ho-game__button-next"
+            data-bind="disable: currentLevelNum() === maxLevelNum"
+            js-level-next>Next</button>
+    </div>
+</div>

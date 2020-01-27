@@ -1,0 +1,16 @@
+﻿@import (reference) "../../variables.less";
+@import (less, reference) "../../../../lib/dev-colors.css"; // Debug
+
+
+.menu {
+    display: flex;
+
+    &__item {
+        padding: @gap-s;
+        background-color: #def;
+        text-decoration: none;
+        color: black;
+
+        &:hover { opacity: 0.8 }
+    }
+}

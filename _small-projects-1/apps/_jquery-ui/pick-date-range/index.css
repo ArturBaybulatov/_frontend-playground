@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.u-highlighted { box-shadow: inset 0 0 20px 20px #ccc5 }
+
+.u-pre { white-space: pre }
+
+
+/*.ui-tabs .ui-tabs-panel { padding: 3px 0 0 0 !important }*/
+
+
+.ui-dialog {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.ui-dialog .ui-dialog-content { overflow: visible !important }
+
+
+.spacer {
+    display: inline-block;
+    width: 15px;
+}
+
+
+.input {
+    display: inline-block;
+    padding: 0.34em;
+}
+
+
+.field {
+    outline: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.field__label {}
+
+
+.toolbar {
+    display: flex;
+    padding: 10px;
+}

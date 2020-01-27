@@ -1,0 +1,30 @@
+﻿<style>
+    .pagination {}
+
+    .pagination__page {
+        display: inline-block;
+        padding: 1em;
+        margin-right: 0.4em;
+        line-height: 1.3em;
+        min-width: 1.3em;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        background-color: #fed;
+    }
+
+    .pagination__page--active {
+        font-weight: bold;
+        color: red;
+    }
+</style>
+
+
+<div class="pagination {{ $ctrl.class }}">
+    <span
+        class="pagination__page"
+        ng-repeat="page in $ctrl.getPages()"
+        ng-class="{ 'pagination__page--active': page === $ctrl.page }"
+        ng-click="$ctrl.page = page"
+    >{{ page }}</span>
+</div>

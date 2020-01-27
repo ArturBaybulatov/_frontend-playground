@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+
+    <link href="~/Content/lib/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link href="~/Content/lib/handsontable-0.34.5/handsontable.min.css" rel="stylesheet">
+    <link href="~/Content/lib/selectize-js-0.12.4/css/selectize.default.css" rel="stylesheet">
+    <link href="~/Content/lib/toastr-2.1.4/toastr.min.css" rel="stylesheet">
+    <link href="~/Content/lib/dev-colors.css" rel="stylesheet"> <!-- Debug -->
+
+    @RenderSection("Styles", required: false)
+</head>
+
+<body>
+    @RenderBody()
+
+    <script src="~/Content/lib/lodash-4.16.4/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="~/Content/lib/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="~/Content/lib/moment-js-2.15.1/moment.min.js"></script>
+    <script src="~/Content/lib/numbro-1.11.0/numbro.min.js"></script>
+    <script src="~/Content/lib/pikaday-1.6.1/pikaday.min.js"></script>
+    <script src="~/Content/lib/handsontable-0.34.5/handsontable.min.js"></script>
+    <script src="~/Content/lib/selectize-js-0.12.4/js/selectize.min.js"></script>
+    <script src="~/Content/lib/toastr-2.1.4/toastr.min.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown' }</script>
+    <script src="~/Content/lib/util-inspect-0.1.8/util-inspect.js"></script> <!-- Debug -->
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="/lib/kendo-ui-2017.3.913/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="/lib/kendo-ui-2017.3.913/styles/kendo.silver.min.css">
+    <link rel="stylesheet" href="/lib/dev-colors.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="content">
+        <h2 class="heading">Lorem ipsum dolor sit amet</h2>
+        <div class="grid-wrap"><div class="grid" js-grid></div></div>
+        <p class="footer">&copy; Horns and Hoofs, Inc.</p>
+    </div>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.core.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.data.min.js"></script>
+
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.data.odata.min.js"></script> <!-- OData support (optional) -->
+
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.columnsorter.min.js"></script>
+
+    <!-- Filtering (optional): -->
+
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.calendar.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.popup.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.datepicker.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.userevents.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.numerictextbox.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.list.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.dropdownlist.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.binder.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.filtermenu.min.js"></script>
+
+    <!-- Editing (optional): -->
+
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.validator.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.editable.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.draganddrop.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.window.min.js"></script>
+
+    <!--<script src="/lib/kendo-ui-2017.3.913/js/kendo.selectable.min.js"></script>--> <!-- Selection (optional) -->
+
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.pager.min.js"></script> <!-- Paging (optional) -->
+
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.grid.min.js"></script>
+
+    <!-- L10n: -->
+
+    <!--<script src='/lib/kendo-ui-2017.3.913/js/cultures/kendo.culture.ru-RU.min.js'></script>
+    <script>kendo.culture('ru-RU')</script>
+    <script src='/lib/kendo-ui-2017.3.913/js/messages/kendo.messages.ru-RU.min.js'></script>-->
+
+    <script src="polyfills.js"></script>
+    <script src="util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

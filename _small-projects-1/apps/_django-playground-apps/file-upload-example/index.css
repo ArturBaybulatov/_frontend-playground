@@ -1,0 +1,71 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.choose-btn {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #cff;
+    opacity: 0.9;
+}
+
+.choose-btn:hover { opacity: 1 }
+
+
+.file-list {}
+
+.file-list__item {
+    display: flex;
+    align-items: center;
+    background-color: #bbd;
+    margin: 10px 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.file-list__item-spacer {
+    flex-shrink: 0;
+    width: 20px;
+}
+
+.file-list__item-preview {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.file-list__item-name {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.file-list__item-remove-btn {
+    flex-shrink: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+}
+
+.file-list__item-remove-btn:hover {
+    opacity: 0.8;
+    background-color: #fcc;
+}

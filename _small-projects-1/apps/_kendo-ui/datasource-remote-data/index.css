@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin: 0;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    padding: 15px;
+}
+
+.toolbar {
+    padding: 10px;
+}
+
+.list {
+    height: 100%;
+    overflow: auto;
+}
+
+.footer {
+    padding: 15px;
+}

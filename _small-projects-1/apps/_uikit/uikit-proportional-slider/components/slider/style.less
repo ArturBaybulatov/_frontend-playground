@@ -1,0 +1,55 @@
+.slider {
+    padding: 0 5%;
+    user-select: none;
+}
+
+.slider__inner {
+    position: relative;
+    width: 100%;
+    padding-bottom : 20%;
+}
+
+.slider__nav-position {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__nav {
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+    background-image: url("../../images/arrow-red-right.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+
+    &--prev {
+        left: -5%;
+        transform: rotate(180deg)
+    }
+
+    &--next {
+        right: -5%;
+    }
+}
+
+.slider__container {
+    height: 100%;
+}
+
+.slider__objects {
+    height: 100%;
+}
+
+.slider__object {
+    width: 20%;
+    height: 100%;
+    background-image: url("../../images/fullscreen.svg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

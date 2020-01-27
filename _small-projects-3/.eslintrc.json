@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "airbnb-base",
+  "globals": {
+    "$": "readonly",
+    "_": "readonly",
+    "dateFns": "readonly",
+    "kendo": "readonly",
+    "log": "readonly",
+    "toastr": "readonly",
+    "URI": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "array-callback-return": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "consistent-return": "off",
+    "func-names": "off",
+    "import/extensions": "off",
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "max-len": ["error", {"code": 200}],
+    "no-async-promise-executor": "off",
+    "no-console": ["warn", {"allow": ["warn", "error"]}],
+    "no-else-return": "off",
+    "no-implicit-coercion": ["error", {}],
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "no-return-assign": "off",
+    "no-shadow": "off",
+    "no-trailing-spaces": ["error", {"skipBlankLines": true}],
+    "no-underscore-dangle": "off",
+    "object-curly-spacing": ["error", "never"],
+    "semi": ["error", "always", {"omitLastInOneLineBlock": true}],
+    "spaced-comment": "off",
+
+    "no-mixed-operators": ["error", {
+      "groups": [
+        ["%", "**"], ["%", "+"], ["%", "-"], ["%", "*"], ["%", "/"],
+        ["&", "|", "<<", ">>", ">>>"],
+        ["==", "!=", "===", "!=="],
+        ["&&", "||"]
+      ]
+    }]
+  }
+}

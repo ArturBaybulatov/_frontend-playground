@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="/lib/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <link href="/lib/toastr-2.1.4/toastr.css" rel="stylesheet">
+    <link href="/lib/baybulatov-util-js-0.2.3/baybulatov-util.css" rel="stylesheet">
+    <link href="/lib/dev-colors.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content" style="background-color: #ccc">
+        <div class="b l-row pagination" js-pagination>
+            <span class="pagination__btn" js-prev-btn>Prev</span>
+            <span class="pagination__text" js-page>1</span>
+            <span class="pagination__btn" js-next-btn>Next</span>
+        </div>
+
+        <table class="e l-row note-list" js-notes-table>
+            <thead>
+                <tr js-captions></tr>
+                <tr js-filters></tr>
+            </thead>
+
+            <tbody js-note-list></tbody>
+        </table>
+    </div>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="/lib/jquery-3.2.1/jquery-3.2.1.js"></script>
+    <script src="/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="/lib/toastr-2.1.4/toastr.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown' }</script>
+    <script src="/lib/_compiled-node-libs/util-inspect-0.1.8/util-inspect.js"></script>
+    <script src="/lib/baybulatov-util-js-0.2.3/baybulatov-util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

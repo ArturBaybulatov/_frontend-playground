@@ -1,0 +1,15 @@
+<c-nav></c-nav>
+
+<div class="pad">
+    <div class="bgap">This is simple eagerly-loaded "about" page</div>
+
+    <div class="bgap" *ngIf="foo">[CommonModule directive example]</div>
+
+    <div class="bgap">{{ time$ | async }}</div>
+
+    <div>
+        <button nz-button nzType="primary">
+            <i nz-icon nzType="loading"></i> Hello
+        </button>
+    </div>
+</div>

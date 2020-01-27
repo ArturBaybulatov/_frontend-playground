@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="../../../lib/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="../../../lib/dev-colors.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="app">
+        <vue-pre :data="items" class="section"></vue-pre>
+
+        <div class="section">
+            <input type="text" class="right-margin" v-model="newName">
+            <input type="text" class="right-margin" v-model="newAge">
+            <button type="button" @click="add()">Add</button>
+        </div>
+
+        <vue-list :items="items" class="section"></vue-list>
+    </div>
+
+    <script src="../../../lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../../lib/jquery-3.1.1/jquery.js"></script>
+    <script src="../../../lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="../../../lib/vue-js-2.4.2/vue.js"></script>
+    <script src="../../../lib/_compiled-node-libs/util-inspect-0.1.8/util-inspect.js"></script>
+
+    <script>
+        // Access libraries from Vue component templates:
+
+        Vue.prototype._ = _;
+        Vue.prototype.utilInspect = utilInspect;
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>

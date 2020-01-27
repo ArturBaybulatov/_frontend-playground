@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="/lib/toastr-2.1.4/toastr.min.css" rel="stylesheet">
+    <link href="lib/baybulatov-util-js-0.5.0+/baybulatov-util.css" rel="stylesheet">
+    <link href="/lib/dev-colors.css" rel="stylesheet"> <!-- Debug -->
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="a" style="padding: 10px">
+        <label class="choose-btn">Choose<input type="file" accept="image/*" multiple js-files-field style="display: none"></label>
+    </div>
+
+    <div class="l-row file-list" js-file-list></div>
+    <div class="e l-row" style="padding: 10px"><button type="button" js-upload-btn>Upload</button></div>
+
+    <script src="/lib/es6-shim-0.35.3/es6-shim.min.js"></script>
+    <script src="/lib/lodash-4.17.5/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="/lib/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script src="/lib/toastr-2.1.4/toastr.min.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown' }</script>
+    <script src="lib/baybulatov-util-js-0.5.0+/baybulatov-util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

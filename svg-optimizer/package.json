@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "optimize": "svgo --config=svgo-config.json --folder=public/originals --output=public/optimized",
+    "develop": "nodemon --watch serve.js --watch template.html --watch public --ext js,css,html serve.js"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "nodemon": "^1.17.5",
+    "reload": "^2.2.2",
+    "serve-index": "^1.9.1",
+    "stat-mode": "^0.2.2",
+    "svgo": "^1.0.5"
+  }
+}

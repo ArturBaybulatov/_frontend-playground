@@ -1,0 +1,24 @@
+﻿@import "../../variables.less";
+
+
+.l-content {}
+
+.l-content__column {
+    margin: 0 auto;
+    background-color: #cdf; // Debug
+}
+
+.l-content__row {
+    padding-bottom: 40px;
+
+    &--last {
+        padding-bottom: 0;
+    }
+}
+
+
+@media @tablet {
+    .l-content__column {
+        width: 768px;
+    }
+}

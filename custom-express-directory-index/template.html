@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%- args.directory %></title>
+
+    <link href="/lib/light-gallery-1.6.11/css/lightgallery.min.css" rel="stylesheet">
+    <link href="/lib/dev-colors.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="breadcrumb pad">
+        <a href="/" class="breadcrumb__home">~</a>
+        <%- args.directory.replace(/\//g, ' / ') %>
+    </div>
+
+    <div class="gallery pad" js-gallery>
+        <% args.fileList.map(function(x) { %>
+            <a
+                class="gallery__item <%- x.stat.isDirectory() ? 'gallery__item--directory' : '' %> rgap bgap"
+                href="<%- x.name %>"
+                <%- x.stat.isFile() ? 'js-img' : '' %>>
+                    <% if (x.stat.isFile()) { %>
+                        <img src="<%- x.name %>" alt="<%- x.name %>" style="width: 100%">
+                    <% } else { %>
+                        <span class="pad"><%- x.name %></span>
+                    <% } %>
+            </a>
+        <% }) %>
+    </div>
+
+    <script src="/lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="/lib/light-gallery-1.6.11/js/lightgallery.min.js"></script>
+    <script src="/lib/light-gallery-1.6.11/modules/lg-thumbnail.min.js"></script>
+    <script>$('[js-gallery]').lightGallery({ selector: '[js-img]' })</script>
+    <script src="/reload/reload.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.selectize-dropdown,
+.selectize-input,
+.selectize-input input {
+    color: black !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: 27px !important;
+}
+
+.selectize-control .row { display: flex }
+
+.selectize-control .col {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-right: 1px solid #999;
+}
+
+.selectize-control .col:first-child { padding-left: 0 }
+
+.selectize-control .col:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.selectize-control .col--narrow { width: 60px }
+
+.selectize-control .col--wide { width: 300px }

@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #ccc;
+}
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.u-highlighted { box-shadow: inset 0 0 20px 20px #ccc5 }
+
+.u-pre { white-space: pre }
+
+.ui-tabs .ui-tabs-panel { padding: 3px 0 0 0 !important }
+
+.tab-widget__tab-btn-anchor { padding-right: 0.2em !important }
+
+.tab-widget__tab-close-btn { cursor: pointer }
+
+.ui-dialog {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.ui-dialog .ui-dialog-content { overflow: visible !important }
+
+.popup-content { width: 600px !important }
+
+.popup-content--narrow { width: 400px !important }

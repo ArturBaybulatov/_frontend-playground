@@ -1,0 +1,29 @@
+@import (reference) "../../variables.less";
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6em;
+}
+
+
+table.fancy-table {
+    border-collapse: collapse;
+
+    tr.-dark { background-color: #f0f8ff }
+
+    th, td {
+        padding: @gap-xs;
+        border: 1px solid #999;
+    }
+
+    th:hover { background-color: #e6ffec }
+
+    th, td {
+        max-width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

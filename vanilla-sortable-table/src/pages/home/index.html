@@ -1,0 +1,17 @@
+﻿{% extends "partials/_layout.html" %}
+
+{% block title %}Vanilla sortable table{% endblock %}
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="pad">
+        <table class="fancy-table nowrap" js-table></table>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

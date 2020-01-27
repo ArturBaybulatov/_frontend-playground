@@ -1,0 +1,22 @@
+﻿{% extends "partials/_layout.html" %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div ng-controller="MainCtrl as vm" class="main">
+        <c-menu pages="vm.pages"></c-menu>
+
+        <div class="content">
+            <c-grid-view page="vm.galleryPage" per-page="30"></c-grid-view>
+            <c-pagination page="vm.galleryPage"></c-pagination>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

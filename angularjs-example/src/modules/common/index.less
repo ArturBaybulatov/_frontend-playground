@@ -1,0 +1,61 @@
+﻿@import (reference) "../_external/variables.less";
+@import (less, reference) "../../../public/lib/dev-colors.css"; // Debug
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.spacer { width: 1em }
+
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &__label {
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+
+    &__input { width: 100% }
+
+    &__text {
+        font-size: 120%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.input { height: 1.6em }
+
+.input-like { height: 2em }
+
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: @max-width;
+    height: 100%;
+    background-color: white;
+}

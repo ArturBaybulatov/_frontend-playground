@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="lib/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content" ng-controller="MainCtrl as vm">
+        <h2>{{ vm.paginationPage }}</h2>
+        <button type="button" class="ui-button" ng-click="vm.openPopup()">Open popup</button>
+    </div>
+
+    <script src="lib/lodash-4.17.5/lodash.min.js"></script>
+    <script src="lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="lib/angular-1.6.9/angular.min.js"></script>
+    <script>angular.module('app', [])</script>
+    <script src="lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+    <script src="components/pagination/index.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

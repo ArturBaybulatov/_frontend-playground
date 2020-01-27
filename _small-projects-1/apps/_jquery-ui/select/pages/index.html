@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="../../../../lib/toastr-2.1.4/toastr.min.css" rel="stylesheet">
+    <link href="../lib/baybulatov-util-js-0.6.0-beta/baybulatov-util.css" rel="stylesheet">
+    <link href="../../../../lib/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link href="../lib/baybulatov-jq-util-0.2.0-beta/baybulatov-jq-util.css" rel="stylesheet">
+    <link href="../../../../lib/dev-colors.css" rel="stylesheet"> <!-- Debug -->
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div><select js-select></select></div>
+    </div>
+
+    <script src="../../../../lib/core-js-2.5.1/shim.min.js"></script>
+    <script src="../../../../lib/lodash-4.17.5/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../../../lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../../../../lib/toastr-2.1.4/toastr.min.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown' }</script>
+    <script src="../lib/baybulatov-util-js-0.6.0-beta/baybulatov-util.js"></script>
+    <script src="../../../../lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="../lib/baybulatov-jq-util-0.2.0-beta/baybulatov-jq-util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

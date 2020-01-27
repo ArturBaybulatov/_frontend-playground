@@ -1,0 +1,107 @@
+.u-animate {transition: all 1s ease}
+
+
+.u-clearfix::before {
+    content: "";
+    display: table-cell;
+}
+    
+.u-clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider__slides {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+.slider__slide {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    list-style-type: none;
+    overflow: auto;
+}
+
+.slider__slide--hidden-left {
+    opacity: 0;
+    left: -100%;
+}
+
+.slider__slide--hidden-right {
+    opacity: 0;
+    left: 100%;
+}
+
+.slider__slide--active {
+    opacity: 1;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+.slider__slide-nav {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.slider__slide-nav--active {
+    background-color: #dec;
+}
+
+
+
+
+
+
+
+
+
+.slider__pic {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.slider__pic--1 {background-image: url("http://placehold.it/200x200/cdf?text=1"); transform: translate(40px, 20px)}
+.slider__pic--2 {background-image: url("http://placehold.it/200x200/cdf?text=2"); transform: translate(-90px, 70px)}
+.slider__pic--3 {background-image: url("http://placehold.it/200x200/cdf?text=3"); transform: translate(220px, -30px)}

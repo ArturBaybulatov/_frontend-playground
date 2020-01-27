@@ -1,0 +1,27 @@
+<div class="user-card">
+    <div class="user-card__field-wrap bgap-s">
+        <span class="user-card__field-name">ID:</span>
+        <span class="user-card__field-value">{{ user.id }}</span>
+    </div>
+
+    <div class="user-card__field-wrap bgap-s">
+        <span class="user-card__field-name">Name:</span>
+
+        <span class="user-card__field-value">
+            <i *ngIf="user.gender === Genders.Male" class="rgap-s" nz-icon type="star" theme="twotone" nzTwotoneColor="#668eff" style="font-size: 150%"></i>
+            <i *ngIf="user.gender === Genders.Female" class="rgap-s" nz-icon type="heart" theme="twotone" nzTwotoneColor="#ff68d6" style="font-size: 150%"></i>
+
+            {{ user.firstName }} {{ user.lastName }}
+        </span>
+    </div>
+
+    <div class="user-card__field-wrap bgap-s">
+        <span class="user-card__field-name">Date of birth:</span>
+        <span class="user-card__field-value">{{ user.dateOfBirth }}</span>
+    </div>
+
+    <div class="user-card__field-wrap">
+        <span class="user-card__field-name">Rating:</span>
+        <span class="user-card__field-value">{{ user.rating }}</span>
+    </div>
+</div>

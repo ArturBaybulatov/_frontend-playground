@@ -1,0 +1,54 @@
+html { background-color: #ddd }
+
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+.clickable { cursor: pointer }
+
+
+.flex { display: flex }
+
+.f-grow { flex-grow: 1 }
+
+
+.pre { white-space: pre }
+
+
+.bg-gray { background-color: #eee }
+
+
+@gap: 20px;
+@gap-s: 10px;
+
+.lgap { margin-left: @gap }
+.lgap-s { margin-left: @gap-s }
+
+.rgap { margin-right: @gap }
+.rgap-s { margin-right: @gap-s }
+
+.tgap { margin-top: @gap }
+.tgap-s { margin-top: @gap-s }
+
+.bgap { margin-bottom: @gap }
+.bgap-s { margin-bottom: @gap-s }
+
+.pad { padding: @gap }
+.pad-s { padding: @gap-s }
+
+
+.soft-link {
+    color: #0088f7;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+    user-select: none;
+
+    &.disableable[disabled] {
+        color: #ccc;
+        cursor: not-allowed;
+    }
+}

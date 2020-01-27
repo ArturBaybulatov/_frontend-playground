@@ -1,0 +1,28 @@
+﻿@import (reference) "../../variables.less";
+@import (less, reference) "../../../public/lib/dev-colors.css"; // Debug
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    background-color: #ddd;
+}
+
+
+.main {
+    max-width: @max-width;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+}
+
+
+.sidebar {
+    width: 220px;
+    min-width: 220px !important; // Override
+    flex-shrink: 0;
+}
+
+.content { width: 100% }

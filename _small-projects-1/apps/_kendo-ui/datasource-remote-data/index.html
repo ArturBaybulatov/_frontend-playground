@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="content">
+        <h2 class="heading">Lorem ipsum dolor sit amet</h2>
+
+        <div class="toolbar" js-toolbar>
+            Skip: <input type="text" size="3" data-bind="value: page" data-value-update="keyup">
+            Sort: <select data-bind="source: sortFields, value: sortField" data-text-field="title" data-value-field="name"></select>
+            <select data-bind="source: sortDirs, value: sortDir" data-text-field="title" data-value-field="name"></select>
+        </div>
+
+        <ul class="list" js-list></ul>
+        <p class="footer">&copy; Horns and Hoofs, Inc.</p>
+    </div>
+
+    <script type="text/x-kendo-template" js-list-item-tpl>
+        <li><b>#: name #</b> #: share_count ## if (private) { #, private # } #</li>
+    </script>
+
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.core.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.data.min.js"></script>
+    <script src="/lib/kendo-ui-2017.3.913/js/kendo.binder.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

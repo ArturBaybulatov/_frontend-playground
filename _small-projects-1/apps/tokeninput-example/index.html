@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="/lib/jquery-tokeninput-1.6.0/css/token-input-facebook.css">
+</head>
+
+<body>
+    <p><input type="text" style="width: 400px" js-select></p>
+    <p><button type="button" js-get-data-btn>Get data</button></p>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/jquery-tokeninput-1.6.0/js/jquery.tokeninput.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

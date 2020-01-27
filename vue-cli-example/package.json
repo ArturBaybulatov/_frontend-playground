@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "vue": "vue"
+  },
+  "devDependencies": {
+    "@vue/cli": "^4.0.5"
+  }
+}

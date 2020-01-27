@@ -1,0 +1,89 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin: 0;
+}
+
+
+.node.node--root {
+    /*user-select: none;*/ /* contenteditable="true" */
+}
+
+.node.node--root ul {
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+
+.caption {
+    position: relative;
+    padding: 8px;
+    line-height: 20px;
+    outline: none;
+}
+
+.caption:hover {
+    background-color: #ffc;
+}
+
+.node.node--selected .caption {
+    background-color: #ddf;
+}
+
+.node.node--leaf > .caption {
+    color: blue;
+}
+
+
+.node.node--branch > .caption::before {
+    position: absolute;
+    left: -10px;
+    content: "";
+    opacity: 0.5;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left: 6px solid black;
+    transform: translateY(30%);
+    transition: all 0.3s;
+}
+
+.node.node--branch.node--active > .caption::before {
+    opacity: 1;
+    transform: rotate(90deg) translateX(60%) translateY(30%);
+}
+
+
+.drag-handle::before {
+    content: "::";
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    letter-spacing: 2.2px;
+    color: white;
+    text-shadow: 1px 1px 1px black, 0 0 2px black;
+    cursor: move;
+}
+
+
+ul.sortable li.dragged {
+    position: absolute;
+    opacity: 0.8;
+    z-index: 2000;
+}
+
+ul.sortable li.placeholder {
+    position: relative;
+    height: 2px;
+    background-color: red;
+    opacity: 0.5;
+}

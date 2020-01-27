@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/lib/uikit-2.27.2/css/uikit.css">
+
+    <link rel="stylesheet" href="../../.build/pages/modal-example/index.css">
+</head>
+
+<body>
+    <div class="l-content__column">
+        <div class="l-content__row">
+            <ko:video params="videoId: 'gZGdILrmK44'"></ko:video>
+
+            <ko:entry params="
+                title: 'Hello there',
+                body: 'Lorem ipsum dolor sit amet',
+            "></ko:entry>
+        </div>
+
+
+
+
+        <div class="l-content__row">
+            Random video ID: <input type="text" data-bind="value: randomVideoId"> E.g.: <code>wSy8MR0RMOw</code>
+        </div>
+
+        <div class="l-content__row">
+            <button
+                class="button button--yellow"
+                type="button"
+                data-bind="click: function() {modalOpen(randomVideoId())}">
+                    Open a modal
+            </button>
+        </div>
+    </div>
+
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+    <script src="/lib/knockout-js-3.4.2/knockout.js"></script>
+    <script src="/lib/uikit-2.27.2/js/uikit.js"></script>
+
+    <script src="../../.build/pages/modal-example/index.js"></script>
+</body>
+</html>

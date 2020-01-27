@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build-watch": "webpack --watch"
+  }
+}

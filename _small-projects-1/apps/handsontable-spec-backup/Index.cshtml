@@ -1,0 +1,99 @@
+﻿@model ERP.WebClient.Specification.Models.SpecClientMainModel
+
+@{
+    ViewData["Title"] = "Загрузка спецификаций";
+
+    var clientData = new {
+        userIsWbManager = Model.IsWbManager,
+    };
+}
+
+@section Styles {
+    <link href="~/Content/lib/baybulatov-util-js-0.2.2/baybulatov-util.css" rel="stylesheet">
+    @*<link href="http://localhost:8080/lib/baybulatov-util-js-dev/baybulatov-util.css" rel="stylesheet">*@ <!-- Dev -->
+    <link href="~/Content/spec/main.css" rel="stylesheet">
+}
+
+<div class="content">
+    <div class="toolbar" js-toolbar>
+        <button type="button" js-open-spec-creation-popup-btn>Создать</button>
+        <button type="button" js-open-spec-selection-popup-btn>Открыть</button>
+        <span class="spacer"></span>
+        <button type="button" js-jump-to-next-err-btn>Найти ошибки</button>
+        <span class="spacer"></span>
+        <button type="button" js-load-spec-btn>Отправить</button>
+        <span class="spacer"></span>
+
+        <button
+            type="button"
+            title="Вы можете перетащить файл на страницу для загрузки"
+            js-import-from-excel-btn>Импорт из Excel</button>
+
+        <input type="file" js-import-from-excel-file-field style="display: none">
+        <button type="button" js-export-to-excel-btn>Экспорт в Excel</button>
+        <span class="spacer"></span>
+
+        <label
+            title="Всегда показывать первые 5 колонок при горизонтальной прокрутке"
+            class="toolbar__toggle-column-fix-lbl">
+                <input type="checkbox" js-toggle-column-fix-chk> Фикс колонок
+        </label>
+    </div>
+
+    <div class="tab-widget" js-tab-widget>
+        <ul class="tab-widget__tab-bar" js-tab-bar></ul>
+        <div class="tab-widget__tab-outlet" js-tab-outlet></div>
+    </div>
+</div>
+
+<script type="text/html" js-tab-btn-tpl>
+    <li js-tab-btn>
+        <a href="#po02gB6a" class="tab-widget__tab-btn-anchor" js-tab-btn-anchor>
+            <span js-tab-title>New tab</span>
+            <span class="ui-icon ui-icon-close tab-widget__tab-close-btn" js-tab-close-btn></span>
+        </a>
+    </li>
+</script>
+
+<script type="text/html" js-spec-selection-popup-tpl>
+    <div class="popup-content">
+        <div class="l-row popup-content__flex-row popup-content__flex-row--specs-by-supplier" js-specs-by-supplier-widget style="display: none">
+            <input
+                type="text"
+                class="popup-content__supplier-id"
+                placeholder="ID поставщика"
+                title="Показать спецификации для конкретного поставщика"
+                js-supplier-id>
+
+            <button type="button" class="popup-content__load-spec-list-btn" js-load-spec-list-btn>Обновить</button>
+        </div>
+
+        <div class="popup-content__flex-row">
+            <div class="popup-content__field" js-specs-container></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" js-multi-key-value-popup-tpl>
+    <div class="popup-content">
+        <div js-kv-items-container></div>
+        <button type="button" js-add-btn>+</button>
+    </div>
+</script>
+
+<script type="text/html" js-multi-key-value-popup-item-tpl>
+    <div class="l-row popup-content__flex-row" js-kv-item>
+        <div class="popup-content__kv-item-key" js-key-container></div>
+        <input class="popup-content__kv-item-value" type="text" js-value>
+        <span class="popup-content__kv-item-remove-btn" js-remove-btn>&times;</span>
+    </div>
+</script>
+
+@section Scripts {
+    <script>window.serverData = @Html.Raw(Json.Encode(clientData))</script>
+    <script src="~/Content/lib/baybulatov-util-js-0.2.2/baybulatov-util.js"></script>
+    @*<script src="http://localhost:8080/lib/baybulatov-util-js-dev/baybulatov-util.js"></script>*@ <!-- Dev -->
+    <script src="~/Content/spec/common.js"></script>
+    <script src="~/Content/spec/ht-cell-types.js"></script>
+    <script src="~/Content/spec/main.js"></script>
+}

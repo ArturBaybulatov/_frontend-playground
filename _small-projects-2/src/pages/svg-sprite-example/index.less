@@ -1,0 +1,28 @@
+﻿@import (less, reference) "../../lib/dev-colors.css"; // Debug
+
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+
+.icon {
+    width: 150px;
+    height: 150px;
+}
+
+
+.item {
+    &:hover {
+        color: red;
+        fill: red;
+    }
+
+    &__icon {}
+
+    &__text { font-size: 150% }
+}

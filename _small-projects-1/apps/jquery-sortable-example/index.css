@@ -1,0 +1,41 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin: 0;
+}
+
+
+.sortable {
+    padding: 0;
+    list-style: none;
+}
+
+.sortable ul {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.sortable li {
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px dotted #999;
+}
+
+.sortable .dragged {
+    position: absolute;
+    opacity: 0.8;
+    z-index: 2000;
+}
+
+.sortable .placeholder {
+    padding: 0;
+    height: 2px;
+    background-color: red;
+    opacity: 0.5;
+}

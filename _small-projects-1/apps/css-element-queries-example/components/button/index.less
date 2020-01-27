@@ -1,0 +1,60 @@
+﻿.button {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 27px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 100px;
+    border: none;
+    border-radius: 19px;
+    outline: none;
+    color: white;
+    background-color: #c6c6c6;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+        box-shadow: 0px 2px 30px -14px black;
+
+        &:hover {
+            background-color: lighten(#c6c6c6, 2%);
+            box-shadow: 0px 2px 30px -13px black;
+        }
+    }
+
+    &--yellow {
+        color: black;
+        background-color: yellow;
+        box-shadow: 0px 2px 30px -14px black;
+
+        &:hover {
+            color: fade(black, 60%);
+            background-color: lighten(yellow, 20%);
+            box-shadow: 0px 2px 30px -10px black;
+        }
+    }
+
+    &--red {
+        color: #fefefe;
+        background-color: red;
+        box-shadow: 0px 2px 30px -14px black;
+
+        &:hover {
+            color: #fefefe;
+            background-color: lighten(red, 10%);
+            box-shadow: 0px 2px 30px -10px black;
+        }
+    }
+}

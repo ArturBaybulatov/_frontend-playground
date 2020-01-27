@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="../../../../lib/toastr-2.1.4/toastr.min.css" rel="stylesheet">
+    <link href="../lib/baybulatov-util-js-0.6.0-beta/baybulatov-util.css" rel="stylesheet">
+    <link href="../../../../lib/kendo-ui-core-2018.2.328/styles/kendo.common.core.min.css" rel="stylesheet">
+    <link href="../../../../lib/kendo-ui-core-2018.2.328/styles/kendo.material.min.css" rel="stylesheet">
+    <link href="../lib/baybulatov-kendo-util-0.3.0-beta/baybulatov-kendo-util.css" rel="stylesheet">
+    <link href="../../../../lib/dev-colors.css" rel="stylesheet"> <!-- Debug -->
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div><button type="button" class='k-button' js-loading-btn>Loading</button></div>
+        <div class="l-row"><button type="button" class='k-button' js-confirm-btn>Confirm</button></div>
+        <div class="l-row"><button type="button" class='k-button' js-popup-btn>Popup</button></div>
+        <div><button type="button" class='k-button' js-image-popup-btn>Image popup</button></div>
+    </div>
+
+    <script src="../../../../lib/core-js-2.5.1/shim.min.js"></script>
+    <script src="../../../../lib/lodash-4.17.5/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../../../lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../../../../lib/toastr-2.1.4/toastr.min.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown' }</script>
+    <script src="../lib/baybulatov-util-js-0.6.0-beta/baybulatov-util.js"></script>
+    <script src="../../../../lib/kendo-ui-core-2018.2.328/js/kendo.ui.core.min.js"></script> <!-- Everything -->
+    <script src="../lib/baybulatov-kendo-util-0.3.0-beta/baybulatov-kendo-util.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

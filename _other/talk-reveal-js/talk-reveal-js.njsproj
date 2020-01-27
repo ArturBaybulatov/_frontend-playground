@@ -1,0 +1,122 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>talk-reveal-js</Name>
+    <RootNamespace>empty</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>79fb9e16-6a51-4b42-ac4a-6021e4cba011</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="css\print\" />
+    <Folder Include="css\theme\" />
+    <Folder Include="images\" />
+    <Folder Include="js\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\css\" />
+    <Folder Include="lib\font\" />
+    <Folder Include="lib\font\league-gothic\" />
+    <Folder Include="lib\font\source-sans-pro\" />
+    <Folder Include="lib\js\" />
+    <Folder Include="plugin\" />
+    <Folder Include="plugin\highlight\" />
+    <Folder Include="plugin\markdown\" />
+    <Folder Include="plugin\math\" />
+    <Folder Include="plugin\multiplex\" />
+    <Folder Include="plugin\notes-server\" />
+    <Folder Include="plugin\notes\" />
+    <Folder Include="plugin\print-pdf\" />
+    <Folder Include="plugin\search\" />
+    <Folder Include="plugin\zoom-js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\print\paper.css" />
+    <Content Include="css\print\pdf.css" />
+    <Content Include="css\reveal.css" />
+    <Content Include="css\theme\beige.css" />
+    <Content Include="css\theme\black.css" />
+    <Content Include="css\theme\blood.css" />
+    <Content Include="css\theme\league.css" />
+    <Content Include="css\theme\moon.css" />
+    <Content Include="css\theme\night.css" />
+    <Content Include="css\theme\serif.css" />
+    <Content Include="css\theme\simple.css" />
+    <Content Include="css\theme\sky.css" />
+    <Content Include="css\theme\solarized.css" />
+    <Content Include="css\theme\white.css" />
+    <Content Include="images\app-structure.png" />
+    <Content Include="images\built-app-structure.png" />
+    <Content Include="images\frontend-build-child.png" />
+    <Content Include="index.html" />
+    <Content Include="index.md" />
+    <Content Include="lib\css\zenburn.css" />
+    <Content Include="lib\font\league-gothic\league-gothic.css" />
+    <Content Include="lib\font\league-gothic\league-gothic.eot" />
+    <Content Include="lib\font\league-gothic\league-gothic.ttf" />
+    <Content Include="lib\font\league-gothic\league-gothic.woff" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-italic.eot" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-italic.ttf" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-italic.woff" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-regular.eot" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-regular.ttf" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-regular.woff" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-semibold.eot" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-semibold.ttf" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-semibold.woff" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-semibolditalic.eot" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-semibolditalic.ttf" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro-semibolditalic.woff" />
+    <Content Include="lib\font\source-sans-pro\source-sans-pro.css" />
+    <Content Include="notes.md" />
+    <Content Include="plugin\markdown\example.html" />
+    <Content Include="plugin\markdown\example.md" />
+    <Content Include="plugin\multiplex\package.json" />
+    <Content Include="plugin\notes-server\notes.html" />
+    <Content Include="plugin\notes\notes.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="js\reveal.js" />
+    <Compile Include="lib\js\classList.js" />
+    <Compile Include="lib\js\head.min.js" />
+    <Compile Include="lib\js\html5shiv.js" />
+    <Compile Include="plugin\highlight\highlight.js" />
+    <Compile Include="plugin\markdown\markdown.js" />
+    <Compile Include="plugin\markdown\marked.js" />
+    <Compile Include="plugin\math\math.js" />
+    <Compile Include="plugin\multiplex\client.js" />
+    <Compile Include="plugin\multiplex\index.js" />
+    <Compile Include="plugin\multiplex\master.js" />
+    <Compile Include="plugin\notes-server\client.js" />
+    <Compile Include="plugin\notes-server\index.js" />
+    <Compile Include="plugin\notes\notes.js" />
+    <Compile Include="plugin\print-pdf\print-pdf.js" />
+    <Compile Include="plugin\search\search.js" />
+    <Compile Include="plugin\zoom-js\zoom.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

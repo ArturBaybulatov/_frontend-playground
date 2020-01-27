@@ -1,0 +1,8 @@
+﻿<ul class="list">
+    <li class="list__item row" v-for="(item, i) in items" :key="item.id">
+        <span class="right-margin">ID: {{ item.id }}</span>
+        <input type="text" class="right-margin" v-model="item.name">
+        <input type="text" class="right-margin" v-model="item.age">
+        <span class="list__remove-item-btn" @click="remove(i)">&times;</span>
+    </li>
+</ul>

@@ -1,0 +1,9 @@
+﻿<div class="menu {{ $ctrl.class }}">
+    <div class="menu__inner">
+        <a
+            ng-repeat="page in $ctrl.pages"
+            ng-href="{{ page.path }}"
+            class="menu__item"
+            ng-class="{ 'menu__item--active': page.active }">{{ page.name }}</a>
+    </div>
+</div>

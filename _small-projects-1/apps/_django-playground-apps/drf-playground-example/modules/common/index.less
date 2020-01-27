@@ -1,0 +1,48 @@
+@import (reference) "../../variables.less";
+@import (less, reference) "../../../../lib/dev-colors.css"; // Debug
+
+
+.gap-s { margin: @gap-s }
+.lgap-s { margin-left: @gap-s !important }
+.rgap-s { margin-right: @gap-s !important }
+.tgap-s { margin-top: @gap-s !important }
+.bgap-s { margin-bottom: @gap-s !important }
+
+.gap { margin: @gap }
+.lgap { margin-left: @gap !important }
+.rgap { margin-right: @gap !important }
+.tgap { margin-top: @gap !important }
+.bgap { margin-bottom: @gap !important }
+
+.gap-l { margin: @gap-l }
+.lgap-l { margin-left: @gap-l !important }
+.rgap-l { margin-right: @gap-l !important }
+.tgap-l { margin-top: @gap-l !important }
+.bgap-l { margin-bottom: @gap-l !important }
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    background-color: #eee;
+}
+
+
+.content {
+    box-sizing: border-box;
+    max-width: @max-width;
+    margin: 0 auto;
+    padding: 15px;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.table { border-collapse: collapse }
+
+.table td {
+    padding: 8px;
+    border: 1px solid #999;
+}

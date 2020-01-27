@@ -1,0 +1,19 @@
+<c-nav></c-nav>
+
+<div class="pad">
+    <div class="bgap">This is lazy-loaded "profile" page with nested routing</div>
+
+    <div class="bgap">
+        <nz-date-picker></nz-date-picker>
+    </div>
+
+    <div>
+        <button class="rgap-s" nz-button (click)="decrement()">–</button>
+
+        <span class="rgap-s">{{ count$ | async }}</span>
+
+        <button class="rgap" nz-button (click)="increment()">+</button>
+
+        <button nz-button (click)="reset()">Reset</button>
+    </div>
+</div>

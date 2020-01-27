@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link href="../../../lib/dev-colors.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="l-content">
+        <div class="l-content__left" js-xxx>
+            <div class="a l-content__left-top">
+                <ko:media params="
+                    title: 'Lorem ipsum dolor sit amet',
+                    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+                    image: '../../images/tall.jpg',
+                    actionText: 'Hello there',
+                "></ko:media>
+            </div>
+        </div>
+
+        <div class="l-content__right">
+            <div class="b l-content__right-top">
+                <ko:media params="
+                    title: 'Lorem ipsum dolor sit amet',
+                    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+                    image: '../../images/tall.jpg',
+                    actionText: 'Hello there',
+                "></ko:media>
+            </div>
+
+            <div class="l-content__right-bottom">
+                <div class="c l-content__right-bottom-left">
+                    <ko:media params="
+                        title: 'Lorem ipsum dolor sit amet',
+                        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+                        image: '../../images/tall.jpg',
+                        actionText: 'Hello there',
+                    "></ko:media>
+                </div>
+
+                <div class="d l-content__right-bottom-right">
+                    <ko:media params="
+                        title: 'Lorem ipsum dolor sit amet',
+                        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
+                        image: '../../images/tall.jpg',
+                        actionText: 'Hello there',
+                    "></ko:media>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../../lib/jquery-3.1.1/jquery.js"></script>
+    <script src="../../../lib/knockout-js-3.4.2/knockout.js"></script>
+    <script src="../../../lib/object-fit-images-3.2.3/ofi.js"></script>
+    <script src="../../../lib/css-element-queries/ResizeSensor.js"></script>
+    <script src="../../../lib/css-element-queries/ElementQueries.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

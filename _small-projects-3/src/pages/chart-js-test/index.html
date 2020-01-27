@@ -1,0 +1,17 @@
+﻿{% extends "partials/_layout.html" %}
+
+{% block title %}Hello{% endblock %}
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="chart-wrap" js-chart-wrap>
+        <canvas js-chart></canvas>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

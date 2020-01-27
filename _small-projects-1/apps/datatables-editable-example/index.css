@@ -1,0 +1,17 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.dataTable tbody td {
+    padding: 8px !important;
+}
+
+.dataTable tbody td input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

@@ -1,0 +1,23 @@
+﻿{% extends "partials/_layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="i main">
+        <div class="b sidebar" js-sidebar>
+            <div class="k-rpanel-toggle"><button type="button">Close</button></div>
+        </div>
+
+        <div class="d content" js-content>
+            <div class="k-rpanel-toggle"><button type="button">Menu</button></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

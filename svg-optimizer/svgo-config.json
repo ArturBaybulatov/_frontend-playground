@@ -1,0 +1,15 @@
+{
+    "js2svg": {
+        "pretty": true,
+        "indent": "    "
+    },
+
+    "plugins": [
+        { "sortAttrs": true },
+        { "removeViewBox": false },
+        { "removeDimensions": true },
+        { "removeRasterImages": true },
+        { "removeStyleElement": true },
+        { "removeScriptElement": true }
+    ]
+}

@@ -1,0 +1,76 @@
+﻿@import "../../variables.less";
+
+
+@media @mobile-only {
+    .modal__wrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 60%;
+        margin: 0 !important; // UIkit override
+        width: auto !important; // UIkit override
+        max-width: none !important; // UIkit override
+    }
+
+    .modal__close {
+        color: white;
+        opacity: 0.5;
+        text-shadow: 0 0 5px black;
+
+        &:hover {
+            color: white;
+            opacity: 1;
+        }
+    }
+}
+
+
+@media @mobile-only and (orientation: landscape) {
+    .modal__wrap {
+        bottom: 0;
+    }
+}
+
+
+.modal__wrap {
+    padding: 0;
+    background-color: white;
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    color: black;
+    outline: none;
+    z-index: 10;
+
+    &:hover {
+        color: #999;
+        text-decoration: none;
+    }
+}
+
+
+@media @tablet {
+    .modal__wrap {
+        padding: 20px;
+        width: 700px; // UIkit override
+        border-radius: 15px;
+    }
+
+    .modal__close {
+        top: -20px;
+        right: -20px;
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+    }
+}

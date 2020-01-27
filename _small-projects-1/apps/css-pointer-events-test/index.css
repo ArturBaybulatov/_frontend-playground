@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    max-width: 400px;
+    color: white;
+    background-color: #f005;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    pointer-events: none;
+    text-shadow: black 0 0 3px;
+}

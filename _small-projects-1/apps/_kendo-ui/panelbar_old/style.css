@@ -1,0 +1,15 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin: 0;
+}
+
+
+.menu .k-panel > .k-item {margin-left: 1em}
+.menu .k-panel > .k-item > .k-link {padding-left: 1em}

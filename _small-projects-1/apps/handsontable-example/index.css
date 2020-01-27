@@ -1,0 +1,43 @@
+body {
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol {
+    margin: 0;
+}
+
+input,
+textarea {
+    padding: 6px;
+    min-width: 300px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+button {
+    padding: 6px;
+    min-width: 80px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+pre {
+    padding: 10px;
+    min-height: 300px;
+    max-height: 400px;
+    background-color: #ddd;
+    overflow: auto;
+}
+
+.l-row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.handsontable .cell-select {
+    font: inherit;
+}

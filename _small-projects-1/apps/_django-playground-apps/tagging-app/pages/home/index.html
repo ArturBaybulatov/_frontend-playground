@@ -1,0 +1,27 @@
+﻿{% extends "_django-playground-apps/drf-playground-example/partials/_layout.html" %}
+
+
+{% block styles %}
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="menu bgap-l" js-menu></div>
+
+        <div class="bgap-l">
+            <form novalidate js-search-form>
+                <input class="k-textbox" js-search-field>
+                <button type="submit" style="position: absolute; visibility: hidden; z-index: -1">Submit</button>
+            </form>
+        </div>
+
+        <div class="bgap" js-note-count></div>
+
+        <div js-note-list></div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="index.js"></script>
+{% endblock %}

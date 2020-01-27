@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Hello</title>
+    <link rel='stylesheet' href='/lib/uikit-2.27.2/css/uikit.css'>
+</head>
+
+<body>
+    <script type="text/html" id="modal">
+        <div class="uk-modal">
+            <div class="uk-modal-dialog">
+                <a class="uk-modal-close uk-close"></a>
+                <%= html %>
+            </div>
+        </div>
+    </script>
+
+
+
+
+
+
+
+
+    <p><button js-modal-open data-modal-contents-id="sdfgsdfg">Open modal 1</button></p>
+    <p><button js-modal-open data-modal-contents-id="bar">Open modal 2</button></p>
+    <p><button js-modal-open data-modal-contents-id="baz">Open modal 3</button></p>
+
+    <script type="text/html" id="sdfgsdfg">
+        <h2>aaaaaasdfgsdfaaaa</h2>
+    </script>
+
+    <script type="text/html" id="bar">
+        <h2>bbbbbbbsdfgbbbbbbbb</h2>
+    </script>
+
+    <script type="text/html" id="baz">
+        <h2>ccccccsdfgcccccccccc</h2>
+    </script>
+
+    <script src='/lib/lodash-4.16.4/lodash.js'></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src='/lib/jquery-3.1.1/jquery.js'></script>
+    <script src='/lib/uikit-2.27.2/js/uikit.js'></script>
+    <script src='common.js'></script>
+    <script src='index.js'></script>
+</body>
+</html>

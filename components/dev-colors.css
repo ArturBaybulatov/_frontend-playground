@@ -1,0 +1,33 @@
+.a {background-color: #ffbfbf !important} .b {background-color: #ffe1bf !important}
+.c {background-color: #fbffbf !important} .d {background-color: #bfffc8 !important}
+.e {background-color: #bff2ff !important} .f {background-color: #bfd0ff !important}
+.g {background-color: #d0bfff !important} .h {background-color: #ffbfea !important}
+.i {background-color: #ff8080 !important} .j {background-color: #ffc480 !important}
+.k {background-color: #f6ff80 !important} .l {background-color: #b2ff80 !important}
+.m {background-color: #80a2ff !important} .n {background-color: #a280ff !important}
+.o {background-color: #ff80d5 !important} .p {background-color: #ff4040 !important}
+.q {background-color: #40ff59 !important} .r {background-color: #40ffbf !important}
+.s {background-color: #40d9ff !important} .t {background-color: #7340ff !important}
+.u {background-color: #d940ff !important} .v {background-color: #ff8800 !important}
+.w {background-color: #eeff00 !important} .x {background-color: #ff00aa !important}
+.y {background-color: #999999 !important} .z {background-color: #997373 !important}
+
+.aa,.bb,.cc,.dd,.ee,.ff,.gg,.hh,.ii,.jj,.kk,.ll,.mm,
+.nn,.oo,.pp,.qq,.rr,.ss,.tt,.uu,.vv,.ww,.xx,.yy,.zz {
+    border-style: solid !important;
+    border-width: 2px !important;
+}
+
+.aa {border-color: #ffbfbf !important} .bb {border-color: #ffe1bf !important}
+.cc {border-color: #fbffbf !important} .dd {border-color: #bfffc8 !important}
+.ee {border-color: #bff2ff !important} .ff {border-color: #bfd0ff !important}
+.gg {border-color: #d0bfff !important} .hh {border-color: #ffbfea !important}
+.ii {border-color: #ff8080 !important} .jj {border-color: #ffc480 !important}
+.kk {border-color: #f6ff80 !important} .ll {border-color: #b2ff80 !important}
+.mm {border-color: #80a2ff !important} .nn {border-color: #a280ff !important}
+.oo {border-color: #ff80d5 !important} .pp {border-color: #ff4040 !important}
+.qq {border-color: #40ff59 !important} .rr {border-color: #40ffbf !important}
+.ss {border-color: #40d9ff !important} .tt {border-color: #7340ff !important}
+.uu {border-color: #d940ff !important} .vv {border-color: #ff8800 !important}
+.ww {border-color: #eeff00 !important} .xx {border-color: #ff00aa !important}
+.yy {border-color: #999999 !important} .zz {border-color: #997373 !important}

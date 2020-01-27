@@ -1,0 +1,92 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>_small-projects</Name>
+    <RootNamespace>empty</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>79fb9e16-6a51-4b42-ac4a-6021e4cba011</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\pages\" />
+    <Folder Include="src\pages\async-await\" />
+    <Folder Include="src\pages\canvas-test\" />
+    <Folder Include="src\pages\html-printing-test\" />
+    <Folder Include="src\pages\kendo-ui-masked-fields\" />
+    <Folder Include="src\pages\manupulate-svg-within-html-object-with-javascript\" />
+    <Folder Include="src\pages\number-spelling\" />
+    <Folder Include="src\pages\svg-sprite-example\" />
+    <Folder Include="src\pages\sync-sleep\" />
+    <Folder Include="src\pages\graphql-sequelize-example\" />
+    <Folder Include="src\pages\bare-xhr-example\" />
+    <Folder Include="src\pages\css-filters\" />
+    <Folder Include="src\pages\kendo-ui-ie11-menu-svg-icon-problem\" />
+    <Folder Include="src\pages\_template\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\async-await\index.html" />
+    <Content Include="src\pages\async-await\index.less" />
+    <Content Include="src\pages\canvas-test\index.html" />
+    <Content Include="src\pages\canvas-test\index.less" />
+    <Content Include="src\pages\html-printing-test\index.html" />
+    <Content Include="src\pages\html-printing-test\index.less" />
+    <Content Include="src\pages\kendo-ui-masked-fields\index.html" />
+    <Content Include="src\pages\kendo-ui-masked-fields\index.less" />
+    <Content Include="src\pages\manupulate-svg-within-html-object-with-javascript\index.html" />
+    <Content Include="src\pages\manupulate-svg-within-html-object-with-javascript\index.less" />
+    <Content Include="src\pages\number-spelling\index.html" />
+    <Content Include="src\pages\svg-sprite-example\index.html" />
+    <Content Include="src\pages\svg-sprite-example\index.less" />
+    <Content Include="src\pages\sync-sleep\index.html" />
+    <Content Include="src\pages\graphql-sequelize-example\index.html" />
+    <Content Include="src\pages\graphql-sequelize-example\index.less" />
+    <Content Include="src\pages\bare-xhr-example\index.html" />
+    <Content Include="src\pages\css-filters\index.html" />
+    <Content Include="src\pages\css-filters\index.less" />
+    <Content Include="src\pages\kendo-ui-ie11-menu-svg-icon-problem\index.html" />
+    <Content Include="src\pages\kendo-ui-ie11-menu-svg-icon-problem\index.less" />
+    <Content Include="src\pages\_template\index.html" />
+    <Content Include="src\pages\_template\index.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\pages\async-await\index.js" />
+    <Compile Include="src\pages\canvas-test\index.js" />
+    <Compile Include="src\pages\html-printing-test\index.js" />
+    <Compile Include="src\pages\kendo-ui-masked-fields\index.js" />
+    <Compile Include="src\pages\manupulate-svg-within-html-object-with-javascript\index.js" />
+    <Compile Include="src\pages\number-spelling\index.js" />
+    <Compile Include="src\pages\svg-sprite-example\index.js" />
+    <Compile Include="src\pages\sync-sleep\index.js" />
+    <Compile Include="src\pages\graphql-sequelize-example\index.js" />
+    <Compile Include="src\pages\bare-xhr-example\index.js" />
+    <Compile Include="src\pages\css-filters\index.js" />
+    <Compile Include="src\pages\kendo-ui-ie11-menu-svg-icon-problem\index.js" />
+    <Compile Include="src\pages\_template\index.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>

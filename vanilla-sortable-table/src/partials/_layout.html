@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="../../lib/toastr-2.1.4/toastr.min.css" rel="stylesheet">
+    <link href="../../lib/dev-colors-safe.css" rel="stylesheet">
+
+    {% block styles %}{% endblock %}
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+
+    <script src="../../polyfill.js"></script>
+
+    <script src="../../lib/lodash-4.17.11/lodash.min.js"></script>
+    <script>_.mixin(_, { chain: true }); Object.defineProperty(_.prototype, 'v', { get: _.prototype.value })</script>
+    <script src="../../lib/date-fns-1.29.0/date_fns.min.js"></script>
+    <script src="../../lib/date-fns-1.29.0/locale-ru.js"></script>
+    <script src="../../lib/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../../lib/toastr-2.1.4/toastr.min.js"></script>
+    <script>toastr.options = { positionClass: 'toast-top-center', showMethod: 'slideDown', escapeHtml: true, closeButton: true }</script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

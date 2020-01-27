@@ -1,0 +1,16 @@
+# Ignore everything, but allow descending into folders:
+
+*
+!*/
+
+
+# Lint the following:
+
+!/postcss.config.js
+!/webpack.config.js
+
+!/src/polyfill.js
+
+!/src/modules/common/**
+
+!/src/pages/chart-js-test/**

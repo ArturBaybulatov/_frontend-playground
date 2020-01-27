@@ -1,0 +1,9 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+  "files": ["src/index.ts"]
+}

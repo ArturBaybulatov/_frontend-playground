@@ -1,0 +1,23 @@
+﻿{% extends "partials/_layout.html" %}
+
+{% block title %}Hello{% endblock %}
+
+{% block styles %}
+    <link href="../../lib/kendo-ui-2019.2.514/styles/kendo.common-material.min.css" rel="stylesheet">
+    <link href="../../lib/kendo-ui-2019.2.514/styles/kendo.material.min.css" rel="stylesheet">
+
+    <link href="index.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="pad grid" js-container></div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="../../lib/kendo-ui-2019.2.514/js/kendo.web.min.js"></script>
+    <script src="../../lib/kendo-ui-2019.2.514/js/cultures/kendo.culture.ru-RU.min.js"></script>
+    <script>kendo.culture('ru-RU')</script>
+    <script src="../../lib/kendo-ui-2019.2.514/js/messages/kendo.messages.ru-RU.min.js"></script>
+
+    <script src="index.js"></script>
+{% endblock %}

@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <link rel="stylesheet" href="/lib/jqwidgets-4.3.0/styles/jqx.base.css"> <!-- Base -->
+    <link rel="stylesheet" href="/lib/dev-colors.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="row" js-calendar></div>
+    <div class="row" js-date-input></div>
+
+    <div>
+        <button type="button" js-get-val-btn>Get values</button>&nbsp;&nbsp;&nbsp;
+        <button type="button" js-set-rnd-val-btn>Set random value</button>
+    </div>
+
+    <script src="/lib/lodash-4.16.4/lodash.js"></script>
+    <script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+    <script src="/lib/jquery-3.1.1/jquery.js"></script>
+
+    <script src="/lib/jqwidgets-4.3.0/jqxcore.js"></script> <!-- Base -->
+
+    <script src="/lib/jqwidgets-4.3.0/jqxdatetimeinput.js"></script> <!-- "jqxcalendar.js" mutual depencency -->
+    <script src="/lib/jqwidgets-4.3.0/jqxcalendar.js"></script> <!-- "jqxdatetimeinput.js" mutual depencency -->
+    <script src="/lib/jqwidgets-4.3.0/globalization/globalize.js"></script> <!-- Calendar/date-time depencency -->
+    <script src="/lib/jqwidgets-4.3.0/globalization/globalize.culture.ru-RU.js"></script> <!-- Optional. Calendar/date-time "ru" culture -->
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Hello</title>
+
+    <link rel='stylesheet' href='http://localhost:9000/uikit-2.27.2/css/uikit.css'>
+    <link rel='stylesheet' href='http://localhost:9000/uikit-2.27.2/css/components/slidenav.css'>
+    <link rel='stylesheet' href='http://localhost:9000/uikit-2.27.2/css/components/dotnav.css'>
+    <link rel='stylesheet' href='http://localhost:9000/uikit-2.27.2/css/components/slideshow.css'>
+</head>
+
+<body>
+<div style="width: 400px">
+    <div class="uk-slidenav-position" data-uk-slideshow>
+        <ul class="uk-slideshow">
+            <li><img src="http://lorempixel.com/640/480/sports/1"></li>
+            <li><img src="http://lorempixel.com/640/480/sports/2"></li>
+            <li><img src="http://lorempixel.com/640/480/sports/3"></li>
+            <li><img src="http://lorempixel.com/640/480/sports/5"></li>
+            <li><img src="http://lorempixel.com/640/480/sports/6"></li>
+        </ul>
+
+        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+
+        <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+            <li data-uk-slideshow-item="0"><a href="#"></a></li>
+            <li data-uk-slideshow-item="1"><a href="#"></a></li>
+            <li data-uk-slideshow-item="2"><a href="#"></a></li>
+            <li data-uk-slideshow-item="3"><a href="#"></a></li>
+            <li data-uk-slideshow-item="4"><a href="#"></a></li>
+        </ul>
+    </div>
+</div>
+
+<script src='http://localhost:9000/lodash-4.16.4/lodash.js'></script>
+<script>_.mixin(_, {chain: true}); Object.defineProperty(_.prototype, 'v', {get: _.prototype.value})</script>
+<script src='http://localhost:9000/jquery-3.1.1/jquery.js'></script>
+
+<script src='http://localhost:9000/uikit-2.27.2/js/uikit.js'></script>
+<script src='http://localhost:9000/uikit-2.27.2/js/components/slideshow.js'></script>
+</body>
+</html>
